@@ -12,17 +12,37 @@ final class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let vc = HomeViewController()
-        vc.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
-        let nv = UINavigationController(rootViewController: vc)
-        let vc2 = ItemViewController()
-        vc2.tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 2)
-        let nv2 = UINavigationController(rootViewController: vc2)
-        setViewControllers([nv, nv2], animated: false)
+        initNavigation()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    private func initNavigation() {
+        // home
+        let home = HomeViewController()
+        home.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+        let nvHome = UINavigationController(rootViewController: home)
+        
+        // wiki
+        let wiki = WikiViewController()
+        wiki.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 2)
+        let nvWiki = UINavigationController(rootViewController: wiki)
+        
+        // item
+        let item = ItemViewController()
+        item.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 3)
+        let nvItem = UINavigationController(rootViewController: item)
+        
+        // camp
+        let camp = CampingViewController()
+        camp.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 4)
+        let nvCamp = UINavigationController(rootViewController: camp)
+        
+        // Update
+        let update = UpdateViewController()
+        update.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 5)
+        let nvUpdate = UINavigationController(rootViewController: update)
+        
+        
+        // tabs
+        setViewControllers([nvHome, nvWiki, nvItem, nvCamp, nvUpdate], animated: false)
     }
 }

@@ -1,5 +1,5 @@
 //
-//  ItemViewController.swift
+//  CampingViewController.swift
 //  E7-wiki
 //
 //  Created by Shota Ito on 2020/01/26.
@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-final class ItemViewController: UIViewController {
+final class CampingViewController: UIViewController {
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.delegate = self
@@ -20,17 +20,17 @@ final class ItemViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.title = "Item"
+        navigationItem.title = "Camping"
         view = tableView
     }
 
 }
 
-extension ItemViewController: UITableViewDelegate {
+extension CampingViewController: UITableViewDelegate {
 
 }
 
-extension ItemViewController: UITableViewDataSource {
+extension CampingViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
     }

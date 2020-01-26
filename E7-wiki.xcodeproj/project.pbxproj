@@ -17,6 +17,9 @@
 		CA4243B023DD8328006F37D9 /* Home2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4243AF23DD8328006F37D9 /* Home2ViewController.swift */; };
 		CA4243B223DD84C4006F37D9 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4243B123DD84C4006F37D9 /* ItemViewController.swift */; };
 		CA4243B423DD8681006F37D9 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4243B323DD8681006F37D9 /* MainTabBarViewController.swift */; };
+		CA4243BD23DDAE77006F37D9 /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4243BC23DDAE77006F37D9 /* WikiViewController.swift */; };
+		CA4243BF23DDAED0006F37D9 /* CampingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4243BE23DDAED0006F37D9 /* CampingViewController.swift */; };
+		CA4243C123DDAF6B006F37D9 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4243C023DDAF6B006F37D9 /* UpdateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +48,9 @@
 		CA4243AF23DD8328006F37D9 /* Home2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home2ViewController.swift; sourceTree = "<group>"; };
 		CA4243B123DD84C4006F37D9 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		CA4243B323DD8681006F37D9 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		CA4243BC23DDAE77006F37D9 /* WikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
+		CA4243BE23DDAED0006F37D9 /* CampingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampingViewController.swift; sourceTree = "<group>"; };
+		CA4243C023DDAF6B006F37D9 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +116,10 @@
 			children = (
 				CA4243B323DD8681006F37D9 /* MainTabBarViewController.swift */,
 				CA4243B723DD9570006F37D9 /* Home */,
+				CA4243B923DDAD9A006F37D9 /* Wiki */,
 				CA4243B823DD9581006F37D9 /* Item */,
+				CA4243BA23DDADB1006F37D9 /* Camp */,
+				CA4243BB23DDADBF006F37D9 /* Update */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -130,6 +139,30 @@
 				CA4243B123DD84C4006F37D9 /* ItemViewController.swift */,
 			);
 			path = Item;
+			sourceTree = "<group>";
+		};
+		CA4243B923DDAD9A006F37D9 /* Wiki */ = {
+			isa = PBXGroup;
+			children = (
+				CA4243BC23DDAE77006F37D9 /* WikiViewController.swift */,
+			);
+			path = Wiki;
+			sourceTree = "<group>";
+		};
+		CA4243BA23DDADB1006F37D9 /* Camp */ = {
+			isa = PBXGroup;
+			children = (
+				CA4243BE23DDAED0006F37D9 /* CampingViewController.swift */,
+			);
+			path = Camp;
+			sourceTree = "<group>";
+		};
+		CA4243BB23DDADBF006F37D9 /* Update */ = {
+			isa = PBXGroup;
+			children = (
+				CA4243C023DDAF6B006F37D9 /* UpdateViewController.swift */,
+			);
+			path = Update;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,10 +260,13 @@
 			files = (
 				CA4243B023DD8328006F37D9 /* Home2ViewController.swift in Sources */,
 				CA4243AE23DD81B3006F37D9 /* HomeViewController.swift in Sources */,
+				CA4243C123DDAF6B006F37D9 /* UpdateViewController.swift in Sources */,
 				CA4243B423DD8681006F37D9 /* MainTabBarViewController.swift in Sources */,
 				CA1AA77D23D59EA30040BE94 /* AppDelegate.swift in Sources */,
+				CA4243BF23DDAED0006F37D9 /* CampingViewController.swift in Sources */,
 				CA1AA77F23D59EA30040BE94 /* SceneDelegate.swift in Sources */,
 				CA4243B223DD84C4006F37D9 /* ItemViewController.swift in Sources */,
+				CA4243BD23DDAE77006F37D9 /* WikiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

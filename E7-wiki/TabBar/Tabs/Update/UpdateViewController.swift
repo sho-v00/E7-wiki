@@ -1,5 +1,5 @@
 //
-//  ItemViewController.swift
+//  UpdateViewController.swift
 //  E7-wiki
 //
 //  Created by Shota Ito on 2020/01/26.
@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-final class ItemViewController: UIViewController {
+final class UpdateViewController: UIViewController {
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.delegate = self
@@ -20,17 +20,17 @@ final class ItemViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.title = "Item"
+        navigationItem.title = "Update Info"
         view = tableView
     }
 
 }
 
-extension ItemViewController: UITableViewDelegate {
+extension UpdateViewController: UITableViewDelegate {
 
 }
 
-extension ItemViewController: UITableViewDataSource {
+extension UpdateViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
     }
@@ -39,3 +39,5 @@ extension ItemViewController: UITableViewDataSource {
         return 10
     }
 }
+
+
