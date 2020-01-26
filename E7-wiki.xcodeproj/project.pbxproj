@@ -20,6 +20,7 @@
 		CA4243BD23DDAE77006F37D9 /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4243BC23DDAE77006F37D9 /* WikiViewController.swift */; };
 		CA4243BF23DDAED0006F37D9 /* CampingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4243BE23DDAED0006F37D9 /* CampingViewController.swift */; };
 		CA4243C123DDAF6B006F37D9 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4243C023DDAF6B006F37D9 /* UpdateViewController.swift */; };
+		E714DB39E6022FC6B17BF408 /* Pods_E7_wiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE7E2808A1903F0D568C842 /* Pods_E7_wiki.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +52,9 @@
 		CA4243BC23DDAE77006F37D9 /* WikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
 		CA4243BE23DDAED0006F37D9 /* CampingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampingViewController.swift; sourceTree = "<group>"; };
 		CA4243C023DDAF6B006F37D9 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
+		CBE7E2808A1903F0D568C842 /* Pods_E7_wiki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E7_wiki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA7B6106E522116416C2CE6 /* Pods-E7-wiki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E7-wiki.debug.xcconfig"; path = "Target Support Files/Pods-E7-wiki/Pods-E7-wiki.debug.xcconfig"; sourceTree = "<group>"; };
+		DF1F0CE6398D5D43D573F647 /* Pods-E7-wiki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E7-wiki.release.xcconfig"; path = "Target Support Files/Pods-E7-wiki/Pods-E7-wiki.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA4243A923DD6CB8006F37D9 /* SnapKit.framework in Frameworks */,
+				E714DB39E6022FC6B17BF408 /* Pods_E7_wiki.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +76,7 @@
 				CA1AA77B23D59EA30040BE94 /* E7-wiki */,
 				CA1AA77A23D59EA30040BE94 /* Products */,
 				CA4243A723DD6CB8006F37D9 /* Frameworks */,
+				F3ADE667D82D685B10DB1CB7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				CA4243A823DD6CB8006F37D9 /* SnapKit.framework */,
+				CBE7E2808A1903F0D568C842 /* Pods_E7_wiki.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,6 +172,16 @@
 			path = Update;
 			sourceTree = "<group>";
 		};
+		F3ADE667D82D685B10DB1CB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCA7B6106E522116416C2CE6 /* Pods-E7-wiki.debug.xcconfig */,
+				DF1F0CE6398D5D43D573F647 /* Pods-E7-wiki.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,11 +189,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA1AA78D23D59EA30040BE94 /* Build configuration list for PBXNativeTarget "E7-wiki" */;
 			buildPhases = (
+				9BD2477800BF67A24A2D06F5 /* [CP] Check Pods Manifest.lock */,
 				CA1AA77523D59EA30040BE94 /* Sources */,
 				CA1AA77623D59EA30040BE94 /* Frameworks */,
 				CA1AA77723D59EA30040BE94 /* Resources */,
 				CA4243AB23DD6CB8006F37D9 /* Embed Frameworks */,
 				CA4243AC23DD6D40006F37D9 /* ShellScript */,
+				1C81418DEF1566A2A2737829 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +252,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1C81418DEF1566A2A2737829 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E7-wiki/Pods-E7-wiki-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E7-wiki/Pods-E7-wiki-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-E7-wiki/Pods-E7-wiki-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BD2477800BF67A24A2D06F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-E7-wiki-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CA4243AC23DD6D40006F37D9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -400,6 +458,7 @@
 		};
 		CA1AA78E23D59EA30040BE94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCA7B6106E522116416C2CE6 /* Pods-E7-wiki.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -422,6 +481,7 @@
 		};
 		CA1AA78F23D59EA30040BE94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF1F0CE6398D5D43D573F647 /* Pods-E7-wiki.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
