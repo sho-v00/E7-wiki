@@ -18,27 +18,27 @@ final class MainTabBarViewController: UITabBarController {
     private func initNavigation() {
         // home
         let home = HomeViewController()
-        home.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+        home.tabBarItem = UITabBarItem(title: "Home", image: R.image.tab_off(), selectedImage: R.image.tab_on())
         let nvHome = UINavigationController(rootViewController: home)
         
         // wiki
         let wiki = WikiViewController()
-        wiki.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 2)
+        wiki.tabBarItem = UITabBarItem(title: "Wiki", image: R.image.tab_off(), selectedImage: R.image.tab_on())
         let nvWiki = UINavigationController(rootViewController: wiki)
         
         // item
         let item = ItemViewController()
-        item.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 3)
+        item.tabBarItem = UITabBarItem(title: "Item", image: R.image.tab_off(), selectedImage: R.image.tab_on())
         let nvItem = UINavigationController(rootViewController: item)
         
         // camp
         let camp = CampingViewController()
-        camp.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 4)
+        camp.tabBarItem = UITabBarItem(title: "Camp", image: R.image.tab_off(), selectedImage: R.image.tab_on())
         let nvCamp = UINavigationController(rootViewController: camp)
         
         // Update
         let update = UpdateViewController()
-        update.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 5)
+        update.tabBarItem = UITabBarItem(title: "Update", image: R.image.tab_off(), selectedImage: R.image.tab_on())
         let nvUpdate = UINavigationController(rootViewController: update)
         
         
