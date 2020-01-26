@@ -21,6 +21,7 @@
 		CA4243BF23DDAED0006F37D9 /* CampingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4243BE23DDAED0006F37D9 /* CampingViewController.swift */; };
 		CA4243C123DDAF6B006F37D9 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4243C023DDAF6B006F37D9 /* UpdateViewController.swift */; };
 		CA4243C623DDBC0C006F37D9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4243C523DDBC0C006F37D9 /* R.generated.swift */; };
+		CA4243C923DDE69F006F37D9 /* BottomToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4243C823DDE69F006F37D9 /* BottomToolBar.swift */; };
 		E714DB39E6022FC6B17BF408 /* Pods_E7_wiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE7E2808A1903F0D568C842 /* Pods_E7_wiki.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		CA4243BE23DDAED0006F37D9 /* CampingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampingViewController.swift; sourceTree = "<group>"; };
 		CA4243C023DDAF6B006F37D9 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
 		CA4243C523DDBC0C006F37D9 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		CA4243C823DDE69F006F37D9 /* BottomToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomToolBar.swift; sourceTree = "<group>"; };
 		CBE7E2808A1903F0D568C842 /* Pods_E7_wiki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E7_wiki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA7B6106E522116416C2CE6 /* Pods-E7-wiki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E7-wiki.debug.xcconfig"; path = "Target Support Files/Pods-E7-wiki/Pods-E7-wiki.debug.xcconfig"; sourceTree = "<group>"; };
 		DF1F0CE6398D5D43D573F647 /* Pods-E7-wiki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E7-wiki.release.xcconfig"; path = "Target Support Files/Pods-E7-wiki/Pods-E7-wiki.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		CA1AA77B23D59EA30040BE94 /* E7-wiki */ = {
 			isa = PBXGroup;
 			children = (
+				CA4243C723DDE67D006F37D9 /* Component */,
 				CA1AA77C23D59EA30040BE94 /* AppDelegate.swift */,
 				CA1AA77E23D59EA30040BE94 /* SceneDelegate.swift */,
 				CA4243C523DDBC0C006F37D9 /* R.generated.swift */,
@@ -173,6 +176,14 @@
 				CA4243C023DDAF6B006F37D9 /* UpdateViewController.swift */,
 			);
 			path = Update;
+			sourceTree = "<group>";
+		};
+		CA4243C723DDE67D006F37D9 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				CA4243C823DDE69F006F37D9 /* BottomToolBar.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 		F3ADE667D82D685B10DB1CB7 /* Pods */ = {
@@ -342,6 +353,7 @@
 				CA4243AE23DD81B3006F37D9 /* HomeViewController.swift in Sources */,
 				CA4243C123DDAF6B006F37D9 /* UpdateViewController.swift in Sources */,
 				CA4243B423DD8681006F37D9 /* MainTabBarViewController.swift in Sources */,
+				CA4243C923DDE69F006F37D9 /* BottomToolBar.swift in Sources */,
 				CA1AA77D23D59EA30040BE94 /* AppDelegate.swift in Sources */,
 				CA4243BF23DDAED0006F37D9 /* CampingViewController.swift in Sources */,
 				CA1AA77F23D59EA30040BE94 /* SceneDelegate.swift in Sources */,
