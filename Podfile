@@ -7,4 +7,6 @@ target 'E7-wiki' do
 
   # Pods for E7-wiki
 
+  pod 'R.swift'
+
 end

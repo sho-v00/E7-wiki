@@ -1,0 +1,6 @@
+framework module Pods_E7_wiki {
+  umbrella header "Pods-E7-wiki-umbrella.h"
+
+  export *
+  module * { export * }
+}
