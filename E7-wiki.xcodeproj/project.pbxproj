@@ -496,6 +496,7 @@
 			baseConfigurationReference = CCA7B6106E522116416C2CE6 /* Pods-E7-wiki.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6769Z85BA2;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -509,8 +510,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shota-ito.E7-wiki";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -519,6 +521,7 @@
 			baseConfigurationReference = DF1F0CE6398D5D43D573F647 /* Pods-E7-wiki.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6769Z85BA2;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -532,8 +535,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shota-ito.E7-wiki";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
