@@ -16,7 +16,7 @@ final class HomeViewController: UIViewController {
 
         let button = UIButton(type: .system)
         container.addSubview(button)
-        button.setTitle("push", for: .normal)
+        button.setTitle("test", for: .normal)
         button.tintColor = UIColor.white
         button.backgroundColor = UIColor.blue
         button.addTarget(self, action: #selector(onTappedPush(_:)), for: .touchUpInside)
